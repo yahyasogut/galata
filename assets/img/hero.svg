@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 560" role="img" aria-labelledby="ht"><title id="ht">Illustration of the Galata tower above a canal with a narrowboat at sunset</title>
+<defs>
+ <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3C98B"/><stop offset=".6" stop-color="#EFA77A"/><stop offset="1" stop-color="#E28A63"/></linearGradient>
+ <linearGradient id="wat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1C6663"/><stop offset="1" stop-color="#0F4C4A"/></linearGradient>
+ <clipPath id="arch"><path d="M20 560V230C20 113 125 20 260 20s240 93 240 210v330z"/></clipPath>
+</defs>
+<g clip-path="url(#arch)">
+ <rect width="520" height="560" fill="url(#sky)"/>
+ <circle cx="372" cy="250" r="62" fill="#FBE3B5" opacity=".9"/>
+ <!-- skyline -->
+ <path d="M20 360v-40h40v-22h30v22h26v-30h34v70zM330 360v-52h28v-18h36v30h30v-26h40v66h56v0z" fill="#C9725A" opacity=".55"/>
+ <!-- mosque dome far -->
+ <path d="M396 312a32 32 0 0 1 64 0z M426 280h4v-26h-4z M470 312h6v-60h-6z" fill="#C9725A" opacity=".55"/>
+ <!-- tower -->
+ <g>
+  <path d="M215 132 260 52l45 80z" fill="#0F4C4A"/>
+  <path d="M258 52h4v-14h-4z" fill="#0F4C4A"/>
+  <rect x="200" y="132" width="120" height="16" rx="3" fill="#7A3B27"/>
+  <g fill="#7A3B27"><rect x="206" y="148" width="6" height="18"/><rect x="226" y="148" width="6" height="18"/><rect x="246" y="148" width="6" height="18"/><rect x="266" y="148" width="6" height="18"/><rect x="286" y="148" width="6" height="18"/><rect x="306" y="148" width="6" height="18"/></g>
+  <rect x="198" y="164" width="124" height="10" rx="2" fill="#7A3B27"/>
+  <path d="M208 174h104l8 196H200z" fill="#F1E2CB"/>
+  <path d="M208 174h30l-6 196h-32z" fill="#E2CDAE"/>
+  <g fill="#0F4C4A"><path d="M236 196a8 8 0 0 1 16 0v22h-16zM268 196a8 8 0 0 1 16 0v22h-16zM236 250a8 8 0 0 1 16 0v22h-16zM268 250a8 8 0 0 1 16 0v22h-16zM252 304a8 8 0 0 1 16 0v26h-16z"/></g>
+  <path d="M204 230h112M203 286h114" stroke="#D8C0A0" stroke-width="3"/>
+ </g>
+ <!-- houses -->
+ <path d="M60 370v-56l30-22 30 22v56zM130 370v-70l26-18 26 18v70zM330 370v-64l28-20 28 20v64zM396 370v-48l24-16 24 16v48z" fill="#F6EFE4"/>
+ <path d="M60 314l30-22 30 22M130 300l26-18 26 18M330 306l28-20 28 20M396 322l24-16 24 16" fill="none" stroke="#C4552D" stroke-width="6" stroke-linejoin="round"/>
+ <g fill="#0F4C4A" opacity=".8"><rect x="80" y="326" width="10" height="14" rx="5"/><rect x="146" y="314" width="10" height="14" rx="5"/><rect x="350" y="320" width="10" height="14" rx="5"/><rect x="414" y="334" width="10" height="14" rx="5"/></g>
+ <!-- bank -->
+ <rect x="0" y="366" width="520" height="16" fill="#8E4A33"/>
+ <!-- water -->
+ <rect x="0" y="382" width="520" height="190" fill="url(#wat)"/>
+ <g fill="none" stroke="#F3C98B" stroke-width="3" stroke-linecap="round" opacity=".55">
+  <path d="M300 420h120M330 440h70M345 458h40"/><path d="M60 470c20 0 20-6 40-6s20 6 40 6M380 500c20 0 20-6 40-6s20 6 40 6M150 520c20 0 20-6 40-6s20 6 40 6"/>
+ </g>
+ <!-- narrowboat -->
+ <g>
+  <path d="M70 408h300l-14 22H86z" fill="#0B3634"/>
+  <rect x="100" y="380" width="230" height="28" rx="4" fill="#C4552D"/>
+  <rect x="100" y="380" width="230" height="6" fill="#E9A23B"/>
+  <g fill="#FBE3B5"><rect x="118" y="392" width="20" height="10" rx="2"/><rect x="150" y="392" width="20" height="10" rx="2"/><rect x="182" y="392" width="20" height="10" rx="2"/><rect x="214" y="392" width="20" height="10" rx="2"/><rect x="246" y="392" width="20" height="10" rx="2"/></g>
+  <circle cx="300" cy="397" r="7" fill="#0F4C4A"/><circle cx="300" cy="397" r="3" fill="#E9A23B"/>
+  <rect x="316" y="366" width="6" height="16" fill="#0B3634"/>
+ </g>
+ <!-- birds -->
+ <g fill="none" stroke="#7A3B27" stroke-width="2.4" stroke-linecap="round"><path d="M110 150q8-8 16 0q8-8 16 0"/><path d="M150 112q6-6 12 0q6-6 12 0"/><path d="M380 140q6-6 12 0q6-6 12 0"/></g>
+</g>
+<path d="M20 560V230C20 113 125 20 260 20s240 93 240 210v330" fill="none" stroke="#0F4C4A" stroke-width="3"/>
+</svg>
