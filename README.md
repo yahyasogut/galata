@@ -1,6 +1,6 @@
 # Galata — web sitesi
 
-Londra'daki iki şube (Galata Restaurant & Bistro · The Rheidol Rooms) için mobil uyumlu, EN/TR iki dilli statik site.
+Galata Restaurant & Bistro (City Road Lock, Regent's Canal, Londra N1) için mobil uyumlu, EN/TR iki dilli statik site.
 Derleme (build) yok: dosyaları GitHub'a yüklemen yeterli.
 
 ## Yayın (GitHub Pages, ilk kez ~5 dk)
@@ -16,12 +16,12 @@ Derleme (build) yok: dosyaları GitHub'a yüklemen yeterli.
 ## Neyi nereden değiştiririm?
 | Ne | Dosya |
 |---|---|
-| Telefon, saat, adres, sosyal medya | `js/site-config.js` |
-| Menü (şube bazında: galata / rheidol) | `js/menu-data.js` — alan açıklamaları dosyanın başında |
+| Telefon, saat, adres, sosyal medya | `js/site-config.js` (saat ayrıca `js/i18n.js` → foot.hours ve `index.html` schema) |
+| Menü | `js/menu-data.js` — alan açıklamaları dosyanın başında |
 | Tüm metinler (EN + TR) | `js/i18n.js` |
 | Renkler / yazı tipleri | `assets/style.css` en üstteki `:root` |
 
-Not: Galata menüsü ve saatleri (Pzt–Cmt 08–22, Paz 08–21) menü panolarından alındı (Kasım 2026); Rheidol saat/telefonu Google Haritalar'dan; hakkımızda metni taslaktır, işletmeyle teyit edilmeli.
+Not: Galata menüsü ve saatleri (Pzt–Cmt 08–22, Paz 08–21) menü panolarından alındı (Kasım 2026); hakkımızda metni taslaktır, işletmeyle teyit edilmeli.
 Schema.org verisi `index.html` içinde ayrıca yazılı — saat değişirse orayı da güncelle.
 
 ## Uyum notları

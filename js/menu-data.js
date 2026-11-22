@@ -1,7 +1,6 @@
 /* =====================================================================
    GALATA — MENÜLER (şube bazında)
    galata: Galata Cafe & Bistro panolarından aktarıldı (Kasım 2026)
-   rheidol: boş → menü sayfasında "çok yakında" görünür
 
    Ürün alanları:
      name  { en, tr }           ürün adı
@@ -2244,6 +2243,4 @@ window.GALATA_MENU = {
     }
    ]
   }
- ],
- "rheidol": []
-};
+ ] };

@@ -279,3 +279,4 @@ address{font-style:normal}
 .menu-legend p+p{margin-top:8px}
 .menu-legend abbr{text-decoration:none;font-weight:700;color:#2F5E2A}
 .menu-empty{padding:40px 0;color:var(--muted)}
+.branches>.branch:only-child{display:flex;flex-direction:column;justify-content:center}

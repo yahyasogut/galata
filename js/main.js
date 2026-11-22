@@ -35,7 +35,7 @@
     var box = $("#branches"); if (!box) return;
     box.innerHTML = C.branches.map(function (b, i) {
       return '<article class="branch" id="branch-' + b.id + '">' +
-        '<span class="branch-no">0' + (i + 1) + '</span>' +
+        (C.branches.length > 1 ? '<span class="branch-no">0' + (i + 1) + '</span>' : '') +
         '<h3>' + b.name + '</h3><p class="branch-tag">' + pick(b.tagline) + '</p>' +
         '<ul class="branch-info">' +
           '<li>' + ICON.pin + '<address>' + b.address.join("<br>") + '</address></li>' +
@@ -58,7 +58,13 @@
     }).join("");
   }
   function openSheet(o) { if (!sheet) return; sheet.hidden = !o; document.body.classList.toggle("sheet-open", o); if (o) $("a", sheet) && $("a", sheet).focus(); }
-  $$("[data-open-sheet]").forEach(function (b) { b.addEventListener("click", function (e) { e.preventDefault(); openSheet(true); }); });
+  $$("[data-open-sheet]").forEach(function (b) {
+    b.addEventListener("click", function (e) {
+      e.preventDefault();
+      if (C.branches.length === 1) { location.href = tel(C.branches[0].phone); return; }
+      openSheet(true);
+    });
+  });
   $$("[data-close-sheet]").forEach(function (b) { b.addEventListener("click", function () { openSheet(false); }); });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") { openSheet(false); setNav(false); } });
 
@@ -108,7 +114,8 @@
   function renderMenu() {
     var root = $("#menu-root"); if (!root) return;
     var bf = $("#menu-branches"), df = $("#menu-diet"), tabs = $("#menu-tabs");
-    if (bf) {
+    if (bf) bf.hidden = C.branches.length < 2;
+    if (bf && C.branches.length > 1) {
       bf.innerHTML = C.branches.map(function (b) { return '<button type="button" data-b="' + b.id + '" aria-pressed="' + (branch === b.id) + '">' + b.name + '</button>'; }).join("");
       $$("button", bf).forEach(function (x) { x.onclick = function () { branch = x.dataset.b; diet = "all"; history.replaceState(null, "", "?branch=" + branch + location.hash); renderMenu(); }; });
     }
